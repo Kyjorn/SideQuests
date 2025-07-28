@@ -7,20 +7,18 @@ import androidx.navigation.compose.rememberNavController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 
-
-
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
 
-            //navigation Controller
+            //Navigation Controller
             val navController = rememberNavController()
 
-            //routes
-            NavHost(navController = navController, startDestination = "login") {
-                //composable("splash") { SplashScreen(navController) }
-                composable("login") {LoginScreen(navController) }
+            //Routes
+            NavHost(navController = navController, startDestination = "splash") {
+                composable("splash") {SplashScreen(navController)}
+                composable("login") {LoginScreen(navController)}
                 composable("home") {HomeScreen(navController)}
             }
 

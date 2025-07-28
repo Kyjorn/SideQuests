@@ -30,6 +30,10 @@ fun HomeScreen (navController: NavController) {
         Spacer(modifier = Modifier.height(10.dp))
 
         //button properties
-        Button(onClick = {navController.navigate("login")}) { }
+        Button(onClick = {navController.navigate("login")}) {
+            Text(
+                "Sign Out"
+            )
+        }
     }
 }

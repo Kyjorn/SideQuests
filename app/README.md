@@ -11,8 +11,8 @@
 ### 🧭 Navigation Setup
 - [x] Add Navigation Compose dependency
 - [x] Create screens: HomeScreen, QuestScreen, PartyScreen, etc.
+  - [ ] Set up the screens with basic information: TextFields, Buttons, Icons
 - [x] Set up NavHost and NavController
-- [ ] Set up the screens with basic information
 
 ### 🧙 Main Quest Feature
 - [ ] Create `MainQuest` data model (`title`, `time`)
