@@ -3,15 +3,16 @@
 **Goal:** Set up the base app and create the Main Quest system (add + display + countdown)
 
 ### 📁 Project Setup
-- [ ] Create new Android Studio project with Empty Compose Activity
-- [ ] Set minimum SDK (API 24 or higher)
-- [ ] Push initial commit to GitHub
-- [ ] Create README.md with app description and Week 1 checklist
+- [x] Create new Android Studio project with Empty Compose Activity
+- [x] Set minimum SDK (API 24 or higher)
+- [x] Push initial commit to GitHub
+- [x] Create README.md with app description and Week 1 checklist
 
 ### 🧭 Navigation Setup
-- [ ] Add Navigation Compose dependency
-- [ ] Create screens: HomeScreen, QuestScreen, PartyScreen
-- [ ] Set up NavHost and NavController
+- [x] Add Navigation Compose dependency
+- [x] Create screens: HomeScreen, QuestScreen, PartyScreen, etc.
+- [x] Set up NavHost and NavController
+- [ ] Set up the screens with basic information
 
 ### 🧙 Main Quest Feature
 - [ ] Create `MainQuest` data model (`title`, `time`)
