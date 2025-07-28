@@ -9,9 +9,10 @@
 - [x] Create README.md with app description and Week 1 checklist
 
 ### 🧭 Navigation Setup
-- [ ] Add Navigation Compose dependency
-- [ ] Create screens: HomeScreen, QuestScreen, PartyScreen
-- [ ] Set up NavHost and NavController
+- [x] Add Navigation Compose dependency
+- [x] Create screens: HomeScreen, QuestScreen, PartyScreen, etc.
+- [x] Set up NavHost and NavController
+- [ ] Set up the screens with basic information 
 
 ### 🧙 Main Quest Feature
 - [ ] Create `MainQuest` data model (`title`, `time`)
