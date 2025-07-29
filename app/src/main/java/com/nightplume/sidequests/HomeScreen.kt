@@ -27,6 +27,7 @@ fun HomeScreen (navController: NavController) {
 
         //text properties
         Text("Home Screen")
+
         Spacer(modifier = Modifier.height(10.dp))
 
         //button properties

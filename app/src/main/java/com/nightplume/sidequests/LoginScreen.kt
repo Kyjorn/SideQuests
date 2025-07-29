@@ -22,6 +22,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.nightplume.sidequests.ui.theme.Pink40
+import com.nightplume.sidequests.ui.theme.TextBox
 
 /*
 * After splash the app should come here first.
@@ -30,7 +31,8 @@ import com.nightplume.sidequests.ui.theme.Pink40
 */
     @Composable
     fun LoginScreen(navController: NavController) {
-        var textBox by remember { mutableStateOf("") }
+        var username by remember { mutableStateOf("") }
+        var password by remember { mutableStateOf("") }
 
     Column (
             //column properties
@@ -54,18 +56,18 @@ import com.nightplume.sidequests.ui.theme.Pink40
             Box(){
 
                 //username text field properties
-                TextField(
-                    value = textBox,
-                    onValueChange = {},
-                    label = {Text("Username")}
+                TextBox(
+                    labelText = "Username",
+                    textBox = username,
+                    onValueChange = {newText -> username = newText}
                 )
             }
 
             //password text field properties
-            TextField(
-                value = textBox,
-                onValueChange = {},
-                label = {Text("Password")}
+            TextBox(
+                labelText = "Password",
+                textBox = password,
+                onValueChange = {newText -> password = newText}
             )
 
             //sign in button properties
