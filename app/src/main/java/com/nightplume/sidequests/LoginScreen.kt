@@ -1,14 +1,27 @@
 package com.nightplume.sidequests
 
+import androidx.compose.foundation.background
+import androidx.compose.foundation.layout.Arrangement
+import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Spacer
+import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
+import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.material3.Button
 import androidx.compose.material3.Text
+import androidx.compose.material3.TextField
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
+import com.nightplume.sidequests.ui.theme.Pink40
 
 /*
 * After splash the app should come here first.
@@ -17,14 +30,45 @@ import androidx.navigation.NavController
 */
     @Composable
     fun LoginScreen(navController: NavController) {
+        var textBox by remember { mutableStateOf("") }
 
-        Column {
+    Column (
+            //column properties
+            Modifier
+                .background(color = Pink40)
+                .fillMaxSize(),
+                    verticalArrangement = Arrangement.Center,
+                    horizontalAlignment = Alignment.CenterHorizontally
+        ){
+        //login text properties
+        Text(
+            "Login",
+            fontSize = 20.sp,
+            modifier = Modifier
+                .wrapContentSize(Alignment.TopStart)
+        )
 
-            //text properties
-            Text("Login")
-            Spacer(modifier = Modifier.height(10.dp))
+        Spacer(modifier = Modifier.height(10.dp))
+        
+            //box for first text field and the login label
+            Box(){
 
-            //button properties
+                //username text field properties
+                TextField(
+                    value = textBox,
+                    onValueChange = {},
+                    label = {Text("Username")}
+                )
+            }
+
+            //password text field properties
+            TextField(
+                value = textBox,
+                onValueChange = {},
+                label = {Text("Password")}
+            )
+
+            //sign in button properties
             Button(onClick = {navController.navigate("home")}) {
                 Text("Sign in")
             }
