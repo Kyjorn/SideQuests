@@ -26,7 +26,9 @@ fun HomeScreen (navController: NavController) {
     Column {
 
         //text properties
-        Text("Home Screen")
+        Text(
+            "Home Screen"
+        )
 
         Spacer(modifier = Modifier.height(10.dp))
 
