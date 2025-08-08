@@ -1,6 +1,8 @@
 ## Week 1 Progress ✅
 
-**Goal:** Set up the base app and create the Main Quest system (add + display + countdown)
+## Progress Update 6 August 2025
+- During week 1 had complications with the main PC and had to move to a laptop to continue
+- Due to this, the timeline will be pushed back a bit. 
 
 ### 📁 Project Setup
 - [x] Create new Android Studio project with Empty Compose Activity
